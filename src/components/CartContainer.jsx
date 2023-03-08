@@ -26,12 +26,12 @@ const CartContainer = () => {
         })}
       </div>
       <footer>
-        <hr className=" mx-auto my-4" />
+        <hr className=" mx-auto my-4 w-75" />
         <h4 className="d-flex justify-content-around">
-          The Total: <span>{total}</span>
+          The Total: <span>{total.toFixed(2)}</span>
         </h4>
         <button
-          className="btn btn-danger p-2 my-4"
+          className="btn btn-danger p-2 my-5 w-50"
           onClick={() => dispatch(clearAll())}
         >
           Clear the list
