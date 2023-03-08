@@ -8,13 +8,10 @@ const Navbar = () => {
 
     return (
         <nav>
-            <div className="nav-center">
+            <div className="d-flex justify-content-around align-items-center p-3 bg-primary text-light">
                 <h3>Redux Toolkit</h3>
                 <div className="nav-container">
-                    {/* <CartIcon /> */}
-                    <div className="amount-container">
-                        <p className='total-amount'>{ amount }</p>
-                    </div>
+                       <p className='h2'>Cart <span className='badge bg-warning p-1'>{ amount }</span></p>
                 </div>
             </div>
         </nav>
