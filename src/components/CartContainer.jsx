@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import CartItem from "./CartItem";
-import { clearAll } from "../feature/cart/cartSlice";
+import { openModel } from "../feature/model/modelSlice";
 
 const CartContainer = () => {
   const { cartItems, amount, total } = useSelector((store) => store.cart);
@@ -32,7 +32,7 @@ const CartContainer = () => {
         </h4>
         <button
           className="btn btn-danger p-2 my-5 w-50"
-          onClick={() => dispatch(clearAll())}
+          onClick={() => dispatch(openModel())}
         >
           Clear the list
         </button>
